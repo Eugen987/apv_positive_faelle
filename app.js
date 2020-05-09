@@ -16,7 +16,7 @@ const job = () => {
                 for (let feature of body.features){
                     let attributes = feature.attributes;
                     fs.appendFile('./data/fallZahlenRKI.csv',
-                        `${attributes.Datenstand};${attributes.Altersgruppe};${attributes.EW_M};${attributes.EW_W};${attributes.Faelle_M};${attributes.Faelle_W};${attributes.Inzidenz_M};${attributes.Inzidenz_W}\n`,
+                        `${attributes.Datenstand.split(',')[0]};${attributes.Altersgruppe};${attributes.EW_M};${attributes.EW_W};${attributes.Faelle_M};${attributes.Faelle_W};${attributes.Inzidenz_M};${attributes.Inzidenz_W}\n`,
                         (err) =>{
                             if(err){
                                 console.log(err);
