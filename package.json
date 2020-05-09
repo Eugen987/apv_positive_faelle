@@ -1,0 +1,16 @@
+{
+  "name": "apv_positive_faelle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Persistenz von Fallzahlen Mannheim Coronavirus",
+  "dependencies": {
+    "request": "^2.88.2",
+    "uglify-js": "^3.9.2"
+  }
+}
